@@ -1,6 +1,8 @@
 # 07-login-page
-Página de Log In, Inicio de sesión, basada en la página de Login de Remoteco.com
-Se emulo el diseño usando Boostrap
-También se ha usado algo de JS para la sección ocultar/mostrar contraseña y para dar estilo a la validación de la misma
+Log In page mocked from Remoteco.com from scratch using Boostrap and Vanilla JS. Login design form, with validation, password toggle functions and more. Compare my page and the original one here: https://www.remoteco.com/login
 
-Puedes ver la página en vivo aquí: https://thony-arrieche.github.io/07-login-page/
+Tech used:
+Design and frame with Boostrap
+Functions, form control and visibility checks with Vanilla JS
+
+See the page live: https://thony-arrieche.github.io/07-login-page/
