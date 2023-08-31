@@ -89,7 +89,7 @@ body {
     /* place item at the end and on top of the pwd input element*/
     width: 1.3rem;
     position: relative;
-    left: 88%;
+    left: 86%;
     top: -31px;
     /* transform: translate(275px, -32px); */
 }
