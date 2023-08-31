@@ -1,4 +1,4 @@
-// Example starter JavaScript for disabling form submissions if there are invalid fields
+// Disbale form submissions if there are invalid fields
 (() => {
     'use strict'
   
@@ -18,14 +18,16 @@
     })
   })()
 
-// togglePassword Func
-function myFunction() {
+// togglePassword function
+function togglePassword() {
     var passwordLock = document.getElementById("password");
+    var eyeIconImg = document.getElementById('eye-icon');
+
     if (passwordLock.type === "password") {
         passwordLock.type = "text";
-        passwordLock.src = "assets/eye_close.svg";
+        eyeIconImg.src = "assets/eye_close.svg";
     } else {
         passwordLock.type = "password";
-        passwordLock.src = "assets/eye_open.svg";
+        eyeIconImg.src = "assets/eye_open.svg";
     }
   }

@@ -11,16 +11,26 @@ body {
     font-family: 'Nunito Sans', sans-serif;
 }
 
+.fa-arrow-left {
+    cursor: pointer  !important;
+
+}
+
 .img-container {
     width: 100%;
     min-height: 100vh;
     background: url(assets/artboard.jpg);
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
 .forgot-pwd, .small-text {
     font-size: 0.8rem;
+}
+
+.forgot-pwd a:hover, .small-text:hover {
+    color: rgb(9, 94, 9);
+    text-decoration: none;
 }
 
 #btn-submit {
@@ -31,80 +41,56 @@ body {
 #btn-submit:hover {
     border-color:#0d6efd;
     background-color: #0d6efd;
-    transition: all ease 0.75s;
+    transition: all ease-in-out 0.8s;
 }
 
 /* BTN ANIMATION */
-.btn-anim {
+/* * this could be optimized using a map or list to alternate colors*/
+.btn-anim-fa {
     background: linear-gradient(to right, #0d6efd 50%, white 50%);
     background-size: 200% 100%;
     background-position: right bottom;
-    transition: all .4s ease-out !important;
+    transition: all .2s ease-out !important;
 }
 
 
-.btn-anim:hover {
+.btn-anim-fa:hover {
     background-position: left bottom;
     color: whitesmoke !important;
 }
 
-/* fill anim */
-.fill:hover {
-    color: whitesmoke;
-  }
-  
-  .fill:before {
-    content: "";
-    position: absolute;
-    background: #0d6efd;
-    bottom: 0;
-    left: 0;
-    right: 100%;
-    top: 0;
-    z-index: -1;
-    transition: all .5s ease-out !important;
-    border-radius: 5px;
-    /* -webkit-transition: top 0.09s ease-in; */
-  }
-  
-  .fill:hover:before {
-    right: 0;
-    color: #ddd;
-  }
-
-
-.btn-animation-google::after {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    background-color: #dc3545;
-    border-radius: 5px;
-    transition: all 0.5s ease-in-out;
+.btn-anim-linkedin {
+    background: linear-gradient(to right, #0dcaf0 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .2s ease-out !important;
 }
 
-.btn-animation-li::after {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    background-color: #0dcaf0;
-    border-radius: 5px;
-    transition: all 0.5s ease-in-out;
+
+.btn-anim-linkedin:hover {
+    background-position: left bottom;
+    color: whitesmoke !important;
 }
 
-.btn-animation:hover:after {
-    left: auto;
-    width: 100%;
+.btn-anim-google {
+    background: linear-gradient(to right, #dc3545 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .2s ease-out !important;
 }
-.btn-animation:active {
-    top: 2px;
-    
+
+
+.btn-anim-google:hover {
+    background-position: left bottom;
+    color: whitesmoke !important;
+}
+
+#eye-icon {
+    /* place item at the end and on top of the pwd input element*/
+    width: 1.3rem;
+    position: relative;
+    left: 88%;
+    top: -31px;
+    /* transform: translate(275px, -32px); */
 }
 
